@@ -1,14 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { RegisterPage } from './pages/RegisterPage'
-import { Box, CircularProgress, createTheme, CssBaseline, ThemeProvider } from '@mui/material'
-import ResumeMaker from './pages/HomePage'
+import { Box, CircularProgress, CssBaseline } from '@mui/material'
+import HomePage from './pages/HomePage'
 import { useAuth } from './hooks/useAuth'
 import { LoginPage } from './pages/LoginPage'
 import { AuthProvider } from './provider/AuthProvider'
-import { InvitePage } from './pages/InvitePage'
-import Theme from './Theme'
-import HomePage from './pages/HomePage'
 
 /**
  * A wrapper for routes that require authentication.
@@ -67,15 +64,6 @@ export default function App() {
                             element={
                                 <ProtectedRoute>
                                     <HomePage />
-                                </ProtectedRoute>
-                            }
-                        />
-
-                        <Route
-                            path='/invites'
-                            element={
-                                <ProtectedRoute>
-                                    <InvitePage />
                                 </ProtectedRoute>
                             }
                         />

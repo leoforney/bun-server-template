@@ -5,7 +5,6 @@ WORKDIR /app/frontend
 COPY frontend/ ./
 
 RUN bun install
-COPY frontend/ ./
 RUN bun run build
 
 # Stage 2: Setup and run the production server

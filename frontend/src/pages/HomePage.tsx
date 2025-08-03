@@ -1,4 +1,4 @@
-import { memo, useRef } from 'react'
+import { memo } from 'react'
 import { Box, Typography } from '@mui/material'
 import { useAuth } from '../hooks/useAuth'
 

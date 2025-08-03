@@ -1,6 +1,6 @@
 import { useAuth } from '../hooks/useAuth'
 import { useNavigate, useSearchParams } from 'react-router-dom'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Alert, Box, Button, CircularProgress, Container, Grid, Link, TextField, Typography } from '@mui/material'
 
 export const RegisterPage = () => {
