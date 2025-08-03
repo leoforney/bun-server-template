@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Backend server" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/backend/package.json" />
+    <command value="run" />
+    <scripts>
+      <script value="start" />
+    </scripts>
+    <node-interpreter value="$USER_HOME$/.bun/bin/bun" />
+    <node-options value="--prefix backend/" />
+    <package-manager value="$USER_HOME$/.bun/bin/bun" />
+    <envs>
+      <env name="NODE_ENV" value="development" />
+    </envs>
+    <method v="2" />
+  </configuration>
+</component>
